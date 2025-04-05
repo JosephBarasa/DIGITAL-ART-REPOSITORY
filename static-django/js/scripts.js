@@ -10,26 +10,6 @@
       }
     };
 
-
-    // ACCORDION
-    var allPanels = $('.accordion > dd').hide();
-    $('.accordion > dt > a').click(function () {
-      var panel = $(this).parent().next();
-      panel.slideToggle();
-      setTimeout(function() {
-        locoScroll.update();
-      }, 400); // Delay for 1 second
-      return false;
-    });
-
-
-    /* HAMBURGER */
-    $('.hamburger').on('click', function () {
-      $(".hamburger").toggleClass("active")
-      $(".side-widget").toggleClass("active")
-      $(".section-wrapper").toggleClass("no-transform")
-    })
-
     /* SEARCH */
     $('.search-button').on('click', function () {
       $(".search-box").toggleClass("active")
